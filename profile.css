@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffff0; /* ivory */
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #265e39; /* dark green */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #f4e04d; /* yellow accent */
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #265e39;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  color: #265e39;
+  margin-bottom: 10px;
+}
+
+.edit-btn {
+  background-color: #265e39;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.edit-btn:hover {
+  background-color: #4a6e5a;
+}
+
+/* Profile Form */
+.profile-form {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-form h3 {
+  color: #265e39;
+  margin-bottom: 20px;
+}
+
+.profile-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #265e39;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.save-btn {
+  background-color: #f4e04d;
+  color: #265e39;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #265e39;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: #265e39;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
