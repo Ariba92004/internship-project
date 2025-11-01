@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Jobs | Employer Dashboard</title>
+  <link rel="stylesheet" href="employer-dashboard.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <img src="images/logo.png.png" alt="Logo" class="logo">
+    <h2>Employer Panel</h2>
+    <a href="employer-dashboard.html">🏠 Dashboard</a>
+    <a href="employer-post-job.html">➕ Add Job</a>
+    <a href="employer-manage-jobs.html" class="active">📋 Manage Jobs</a>
+    <a href="employers-profile.html">👤 Profile</a>
+    <a href="employer-logout.html">🚪 Logout</a>
+  </div>
+
+  <div class="content">
+    <div class="header-actions">
+      <h1>Manage Posted Jobs</h1>
+      <a href="post-job.html" class="add-btn">+ Add New Job</a>
+    </div>
+
+    <input type="text" id="searchBar" placeholder="🔍 Search by title or location..." class="search-input">
+
+    <table class="job-table" id="jobList">
+      <thead>
+        <tr>
+          <th>Job Title</th>
+          <th>Location</th>
+          <th>Type</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frontend Developer</td>
+          <td>Karachi</td>
+          <td>Full-Time</td>
+          <td><span class="badge active">Active</span></td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Graphic Designer</td>
+          <td>Lahore</td>
+          <td>Part-Time</td>
+          <td><span class="badge closed">Closed</span></td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Marketing Intern</td>
+          <td>Islamabad</td>
+          <td>Internship</td>
+          <td><span class="badge active">Active</span></td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="1app.js">
+  </script>
+</body>
+</html>

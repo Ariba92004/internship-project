@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | DevTriCode</title>
+  <link rel="stylesheet" href="signup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-section">
+      <img src="logo.png" alt="DevTriCode Logo">
+      <h1>DevTriCode</h1>
+      <p>Join the DevTriCode community and build your dream career 💼✨</p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-section">
+      <div class="signup-box">
+        <h2>Create Account</h2>
+
+        <form>
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required>
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required>
+
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" required>
+
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Re-enter your password" required>
+
+          <label>User Type</label>
+          <select required>
+            <option value="">Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="employer">Employer</option>
+            <option value="candidate">Candidate</option>
+          </select>
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <p class="login-text">
+          Already have an account? <a href="login.html">Log In</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <script src="1app.js"></script>
+</body>
+</html>

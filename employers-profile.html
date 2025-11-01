@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employer Profile - Job Portal</title>
+  <link rel="stylesheet" href="employer-dashboard.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Employer Panel</h2>
+    <nav>
+      <a href="employer-dashboard.html">Dashboard</a>
+      <a href="employer-manage-jobs.html">Manage Jobs</a>
+      <a href="employer-post-job.html">Post Job</a>
+      <a href="employers-profile.html" class="active">Profile</a>
+      <a href="employer-logout.html">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <h1>Company Profile 🌿</h1>
+
+    <form id="profileForm" class="profile-form">
+      <label>Company Name</label>
+      <input type="text" id="companyName" placeholder="e.g. DevTriCode Pvt. Ltd." />
+
+      <label>Email Address</label>
+      <input type="email" id="email" placeholder="e.g. company@email.com" />
+
+      <label>Location</label>
+      <input type="text" id="location" placeholder="e.g. Karachi, Pakistan" />
+
+      <label>Website</label>
+      <input type="text" id="website" placeholder="e.g. www.devtricode.com" />
+
+      <label>About Company</label>
+      <textarea id="about" rows="5" placeholder="Write a short company description..."></textarea>
+
+      <label>Upload Logo</label>
+      <input type="file" id="logo" accept="image/*" />
+
+      <button type="submit" class="submit-btn">Update Profile</button>
+    </form>
+  </main>
+
+  <script src="1app.js"></script>
+</body>
+</html>

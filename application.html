@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Applications - Job Portal</title>
+  <link rel="stylesheet" href="candidate.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>User Panel</h2>
+    <nav>
+      <a href="candidate-dashboard.html">Dashboard</a>
+      <a href="browse-jobs.html">Browse Jobs</a>
+      <a href="candidate-profile.html">Profile</a>
+      <a href="applications.html" class="active">My Applications</a>
+      <a href="logout-C.html">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <h1>My Job Applications</h1>
+    <p>Below are the jobs you have applied for:</p>
+
+    <table class="application-table">
+      <thead>
+        <tr>
+          <th>Job Title</th>
+          <th>Company</th>
+          <th>Applied On</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frontend Developer</td>
+          <td>CodeCrafters Ltd</td>
+          <td>Oct 25, 2025</td>
+          <td><span class="status pending">Pending</span></td>
+        </tr>
+        <tr>
+          <td>Backend Engineer</td>
+          <td>Innovatech</td>
+          <td>Oct 28, 2025</td>
+          <td><span class="status selected">Selected</span></td>
+        </tr>
+        <tr>
+          <td>UI/UX Designer</td>
+          <td>Designify</td>
+          <td>Oct 30, 2025</td>
+          <td><span class="status rejected">Rejected</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+<script src="1app.js"></script>
+</body>
+</html>
